@@ -6,6 +6,7 @@
     const alertMessage = document.querySelector('.error-message');
     
     const emailAlert = document.querySelector('.email-alert');
+    
     const messageAlert = document.querySelector('.message-alert');
       
     const validation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;

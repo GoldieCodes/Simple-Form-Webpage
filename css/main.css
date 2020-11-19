@@ -8,11 +8,6 @@ body {
   padding: 0;
 }
 
-.container {
-  width: 85%;
-  margin: 0 auto;
-}
-
 h1, h2, h3, p {
   margin-top: 0;
 }
@@ -68,7 +63,7 @@ body {
 }
 
 .contact .fas {
-  line-height: 1.5;
+  line-height: 1.2;
 }
 
 input, textarea {
@@ -148,14 +143,33 @@ button:focus {
   text-align: left;
 }
 
-@media (min-width: 700px) {
+.attribution {
+  width: 100%;
+  position: absolute;
+  bottom: -18px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+@media (min-width: 500px) {
   body {
-    background-size: 50%;
+    background-size: 100%;
     background-repeat: repeat;
   }
   .flex-left {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .attribution {
+    width: initial;
+    bottom: 0;
+  }
+}
+
+@media (min-width: 950px) {
+  body {
+    background-size: 50%;
   }
 }

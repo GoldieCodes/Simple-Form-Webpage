@@ -1,0 +1,19 @@
+@media (min-width: 500px){
+    body{
+        background-size: 100%;
+        background-repeat: repeat;
+    }
+    .flex-left{
+        display: flex;
+    }
+    .attribution{
+        width: initial;
+        bottom: 0;
+    }
+}
+
+@media (min-width: 950px){
+    body{
+        background-size: 50%;
+    }
+}

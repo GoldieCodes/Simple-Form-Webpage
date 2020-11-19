@@ -45,7 +45,7 @@ body{
         width: 75%;
     }
     .fas{
-        line-height: 1.5;
+        line-height: 1.2;
     }
 }
 
@@ -110,12 +110,12 @@ button{
     text-align: left;
 }
 
-@media (min-width: 700px){
-    body{
-        background-size: 50%;
-        background-repeat: repeat;
-    }
-    .flex-left{
-        display: flex;
-    }
+.attribution{
+    width: 100%;
+    position: absolute;
+    bottom: -18px;
+    left: 50%;
+    transform: translateX(-50%);
 }
+
+@import '_responsive.scss';

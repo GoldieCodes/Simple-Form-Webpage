@@ -8,6 +8,7 @@ body{
     font-family: 'Josefin Sans', sans-serif;
     background-image: url('../images/sharon-mccutcheon-NkQD-RHhbvY-unsplash.jpg');
     background-size: cover;
+    background-repeat: no-repeat;
     font-size: 1.1rem;
     color: $secondary-clr;
 }
@@ -42,7 +43,7 @@ body{
     display: flex;
     justify-content: space-around;
     .description{
-        width: 70%;
+        width: 49%;
     }
     .fas{
         line-height: 1.5;

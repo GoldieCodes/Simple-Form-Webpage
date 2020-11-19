@@ -1,7 +1,7 @@
 @import '_reset.scss';
 
 $primary-clr: #CFADAC;
-$secondary-clr: rgb(66, 109, 109);
+$secondary-clr: #89859C;
 $button-bg: #f15853;
 
 body{
@@ -112,6 +112,7 @@ button{
 
 .attribution{
     width: 100%;
+    font-weight: bold;
     position: absolute;
     bottom: -18px;
     left: 50%;

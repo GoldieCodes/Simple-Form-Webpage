@@ -1,0 +1,144 @@
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  background-image: url("../images/sharon-mccutcheon-NkQD-RHhbvY-unsplash.jpg");
+  background-size: cover;
+  font-size: 1.1rem;
+  color: #426d6d;
+}
+
+.card {
+  position: absolute;
+  width: 70%;
+  max-width: 500px;
+  margin: 0 auto;
+  padding: .75em 1.5em 2em;
+  background: #fff;
+  border-radius: 30px;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #426d6d;
+  text-align: center;
+  -webkit-box-shadow: 2px 2px 12px #617272;
+          box-shadow: 2px 2px 12px #617272;
+}
+
+.card h3 {
+  margin-bottom: 0;
+}
+
+.card p {
+  color: #CFADAC;
+  font-size: small;
+}
+
+.contact {
+  padding: .25em 0;
+  text-align: initial;
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.contact .description {
+  width: 70%;
+}
+
+.contact .fas {
+  line-height: 1.5;
+}
+
+input, textarea {
+  outline: none;
+  width: 100%;
+  color: #426d6d;
+  padding: .7em;
+  font-size: 15px;
+  border: .5px solid #D7C1C4;
+  border-radius: 10px;
+  margin-bottom: .75em;
+  -webkit-transition: border .5s;
+  transition: border .5s;
+}
+
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder {
+  color: #CFADAC;
+}
+
+input:-ms-input-placeholder, textarea:-ms-input-placeholder {
+  color: #CFADAC;
+}
+
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+  color: #CFADAC;
+}
+
+input::placeholder, textarea::placeholder {
+  color: #CFADAC;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid #dfa7ad;
+}
+
+button {
+  cursor: pointer;
+  padding: .5em 2em;
+  outline: none;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  background: #f15853;
+  opacity: .7;
+  color: white;
+  text-transform: lowercase;
+  font-style: italic;
+  margin-top: 1em;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:focus {
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
+}
+
+.icon-error {
+  position: absolute;
+  visibility: hidden;
+  top: 45%;
+  right: 2em;
+}
+
+.error-message {
+  color: #f15853;
+  font-weight: bold;
+  position: absolute;
+  left: 15%;
+  bottom: 5.5em;
+}

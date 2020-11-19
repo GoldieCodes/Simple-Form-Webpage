@@ -21,7 +21,7 @@
     
         function validateEmail(email, message) {
             // the validation constant contains the regex with which every email input is tested. 
-            // See the constant at line 10 above.
+            // See the constant at line 12 above.
     
             if (validation.test(email) && message !== '') {
                 emailAlert.style.visibility = 'hidden';

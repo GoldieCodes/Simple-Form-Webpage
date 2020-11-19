@@ -102,3 +102,10 @@ button{
 	left: 15%;
 	bottom: 5.5em;
 }
+
+@media (min-width: 700px){
+    body{
+        background-size: 50%;
+        background-repeat: repeat;
+    }
+}

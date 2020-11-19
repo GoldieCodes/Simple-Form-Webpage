@@ -7,17 +7,17 @@ $button-bg: #f15853;
 body{
     font-family: 'Josefin Sans', sans-serif;
     background-image: url('../images/sharon-mccutcheon-NkQD-RHhbvY-unsplash.jpg');
-    background-size: cover;
+    background-size: 140%;
     font-size: 1.1rem;
     color: $secondary-clr;
 }
 
 .card{
     position: absolute;
-    width: 70%;
+    width: 80%;
     max-width: 500px;
     margin: 0 auto;
-    padding: .75em 1.5em 2em;
+    padding: .7em 1.5em 1em;
     background: #fff;
     border-radius: 30px;
     top: 50%;
@@ -42,7 +42,7 @@ body{
     display: flex;
     justify-content: space-around;
     .description{
-        width: 70%;
+        width: 75%;
     }
     .fas{
         line-height: 1.5;
@@ -89,23 +89,33 @@ button{
         transform: translateY(2px);
     }
 }
-.icon-error{
+
+.email-field, .message-box{
+    position: relative;
+}
+
+.email-alert, .message-alert{
     position: absolute;
     visibility: hidden;
-    top: 45%;
-    right: 2em;
+    top: .45em;
+    right: .5em;
 }
+
 .error-message{
 	color: $button-bg;
     font-weight: bold;
     position: absolute;
 	left: 15%;
-	bottom: 5.5em;
+    bottom: 4.2em;
+    text-align: left;
 }
 
 @media (min-width: 700px){
     body{
         background-size: 50%;
         background-repeat: repeat;
+    }
+    .flex-left{
+        display: flex;
     }
 }

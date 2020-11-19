@@ -44,15 +44,21 @@
 
                 <form action="#">
                     <input type="text" name="" id="name" placeholder="Name" aria-label="name">
-                    <input type="email" name="" id="email" placeholder="Email" aria-label="email">
+                    
+                    <div class="email-field">
+                        <input type="email" name="" id="email" placeholder="Email" aria-label="email">
+                        <img class="email-alert" src="images/icon-error.svg" alt="">
+                    </div>
+                    
                     <input type="text" name="" id="Subject" placeholder="Subject" aria-label="topic">
-                    <textarea name="" id="text" cols="10" rows="5" placeholder="Message" aria-label="text"></textarea>
-                    <button class="submit" href="#"> Send Message</button>
+                   
+                    <div class="message-box">
+                        <textarea name="" id="text" cols="10" rows="5" placeholder="Message" aria-label="text"></textarea>
+                        <img class="message-alert" src="images/icon-error.svg" alt="">
+                    </div>
+                    <button class="submit"> Send Message</button>
                 </form>
                 
-              <img class="icon-error" src="images/icon-error.svg" alt="">
-            
-
                 <p class="error-message" style="color: #f15853;"></p>
             </div>
         </div>

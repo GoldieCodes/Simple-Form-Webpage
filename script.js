@@ -5,35 +5,45 @@
 	
     const alertMessage = document.querySelector('.error-message');
     
-    const alertImage = document.querySelector('.icon-error');
+    const emailAlert = document.querySelector('.email-alert');
+    const messageAlert = document.querySelector('.message-alert');
       
-    const message = document.querySelector('#text');
-    
     const validation = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     
         submitButton.addEventListener('click', e => { 
         
             var email = document.querySelector('#email').value;
-            validateEmail(email)	
+            var message = document.querySelector('#text').value;
+            validateEmail(email, message)	
         });
     
     
-        function validateEmail(email) {
+        function validateEmail(email, message) {
             // the validation constant contains the regex with which every email input is tested. 
             // See the constant at line 10 above.
     
-            if (validation.test(email)) {
+            if (validation.test(email) && message !== '') {
+                emailAlert.style.visibility = 'hidden';
+                messageAlert.style.visibility = 'hidden';
                 alertMessage.innerHTML = 'Thanks for your feedback';
-                alertImage.style.visibility = 'hidden';
-                submitButton.setAttribute('href', '#');
+            }
+            else if (validation.test(email) && message === ''){
+                emailAlert.style.visibility = 'hidden';
+                messageAlert.style.visibility = 'visible';
+                alertMessage.innerHTML = 'Please write a message'; 
+            }
+            else if (email === ''){
+                emailAlert.style.visibility = 'visible';
+                messageAlert.style.visibility = 'hidden';
+                alertMessage.innerHTML = 'The e-mail field must not be empty';
             }
             else {
-                  alertImage.style.visibility = 'visible';
-                  alertMessage.innerHTML = 'Please provide a valid email';
-                  submitButton.removeAttribute('href', '#');
+                emailAlert.style.visibility = 'visible';
+                messageAlert.style.visibility = 'hidden';
+                alertMessage.innerHTML = 'Please provide a valid email';
             }
-        
         }	
+
         
  
         

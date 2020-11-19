@@ -14,7 +14,6 @@
         submitButton.addEventListener('click', e => { 
         
             var email = document.querySelector('#email').value;
-            verifyFields(message)
             validateEmail(email)	
         });
     
@@ -24,6 +23,7 @@
             // See the constant at line 10 above.
     
             if (validation.test(email)) {
+                alertMessage.innerHTML = 'Thanks for your feedback';
                 alertImage.style.visibility = 'hidden';
                 submitButton.setAttribute('href', '#');
             }
@@ -35,13 +35,6 @@
         
         }	
         
-        function verifyFields(message){
-            if (message=""){
-                alertMessage.innerHTML= 'Please fill the message field'
-            }
-            else{
-                alertMessage.innerHTML = 'Thanks for your feedback';
-            }
-        }
+ 
         
     
